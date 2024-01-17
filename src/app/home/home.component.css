@@ -1,5 +1,12 @@
+/* .body{
+    background-color: black;
+} */
+
 .nav {
     display: flex;
     justify-content: end;
     align-items: end;
+}
+.container2 {
+    margin-top: 80px;
 }
