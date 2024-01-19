@@ -1,5 +1,19 @@
-.nav {
+.navbar {
+    /* position: fixed; */
+    background: linear-gradient(90deg, rgb(0,0,0), rgb(255,255,255));
+    width: 100%; /* Full width */
+    margin-left: -20px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: end;
-    align-items: end;
+    /* align-items: end; */
+    
+}
+
+.navbar a:hover {
+    background: linear-gradient(90deg, rgb(20, 238, 104), rgb(20, 180, 238));
+    background-color: rgb(30, 226, 30);
+    cursor: pointer;
 }

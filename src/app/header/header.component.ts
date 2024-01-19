@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +8,32 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+
+  constructor(private router: Router, private childElementRef: ElementRef<HTMLElement>) {
+
+  }
+
+  goTo() {
+    document.getElementById('exp')?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    })
+  }
+
+  goTo2() {
+    document.getElementById('desc')?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    })
+  }
+
+  goTo3() {
+    document.getElementById('proj')?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    })
+  }
 }

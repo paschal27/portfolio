@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent {
+
+  constructor(private elementRef: ElementRef<HTMLElement>) {}
+
 
 }

@@ -6,11 +6,14 @@ import { ProjectComponent } from './project/project.component';
 import { ContactsComponent } from './contacts/contacts.component';
 
 const routes: Routes = [
-  {path: 'home',component: HomeComponent, pathMatch: 'full'},
-  {path: 'experience', component: ExperienceComponent, pathMatch: 'full'},
-  {path: 'projects', component: ProjectComponent, pathMatch: 'full'},
-  {path: 'contacts', component: ContactsComponent, pathMatch: 'full'},
-  {path: '**', redirectTo: 'home', pathMatch: 'full'}
+  {path: 'home', component: HomeComponent, pathMatch: 'full'},
+  {path: '**', redirectTo: 'home', pathMatch:'full' }
+  // {path: '', component: HomeComponent, children: [
+  //   {path: 'experience', component: ExperienceComponent},
+  //   {path: 'projects', component: ProjectComponent},
+  //   {path: 'contacts', component: ContactsComponent},
+  //   {path: '**', redirectTo: 'home', pathMatch=:'full' }
+  // ]}
 ];
 
 @NgModule({

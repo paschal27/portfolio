@@ -2,15 +2,14 @@
     background-color: black;
 } */
 
-.nav {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
 .container2 {
     margin-top: 80px;
 }
 
-.c {
-    margin-top: 350px;
+.experience {
+    margin-top: 850px;
+}
+
+.project {
+    margin-top: 850px;
 }
